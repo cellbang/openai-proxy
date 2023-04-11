@@ -1,0 +1,12 @@
+openAIProxy:
+  defaultAPIKey: ${{env.OPENAI_PROXY_DEFAULT_API_KEY}}
+malagu:
+  web:
+    cors:
+      origin:  ${{env.OPENAI_PROXY_CORS_ORIGIN}}
+  cloud:
+    function:
+      timeout: 900
+    apiGateway:
+      api:
+        serviceTimeout: 900

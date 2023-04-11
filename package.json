@@ -1,0 +1,30 @@
+{
+  "name": "openai-proxy",
+  "keywords": [
+    "malagu-component"
+  ],
+  "version": "0.0.0",
+  "license": "MIT",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "dependencies": {
+    "@malagu/core": "2.45.2",
+    "@malagu/mvc": "2.45.2",
+    "http-proxy": "^1.18.1"
+  },
+  "devDependencies": {
+    "@malagu/cli": "2.45.2",
+    "@types/http-proxy": "^1.17.8"
+  },
+  "scripts": {
+    "clean": "rimraf lib dist .malagu",
+    "build": "malagu build -m server",
+    "start": "malagu serve",
+    "deploy": "malagu deploy -m test",
+    "deploy:test": "malagu deploy -m test",
+    "deploy:pre": "malagu deploy -m pre",
+    "deploy:prod": "malagu deploy -m prod"
+  }
+}
