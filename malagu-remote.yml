@@ -1,5 +1,5 @@
 openAIProxy:
-  defaultAPIKey: ${{env.OPENAI_PROXY_DEFAULT_API_KEY}}
+  defaultAPIKeys: ${{env.OPENAI_PROXY_DEFAULT_API_KEY}}
 malagu:
   web:
     cors:

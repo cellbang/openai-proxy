@@ -4,7 +4,7 @@ import { Middleware, CORS_MIDDLEWARE_PRIORITY, Context } from '@malagu/web/lib/n
 import { Component, PostConstruct, Value } from '@malagu/core';
 
 interface OpenAIProxyOptions {
-    defaultAPIKey?: string;
+    defaultAPIKeys?: string | string[];
 }
 
 @Component(Middleware)
@@ -15,14 +15,31 @@ export class CodingProxyMiddleware implements Middleware {
     @Value('openAIProxy')
     protected readonly options?: OpenAIProxyOptions;
 
+    protected apiKeys: string[];
+
     @PostConstruct()
     protected init(): void {
+        if (this.options?.defaultAPIKeys) {
+            this.apiKeys = Array.isArray(this.options.defaultAPIKeys) ? this.options?.defaultAPIKeys : this.options.defaultAPIKeys.split(',');
+        }
         this.proxy = Server.createProxy();
         this.proxy.on('proxyReq', proxyReq => {
-            if (!proxyReq.hasHeader(HttpHeaders.AUTHORIZATION) && this.options?.defaultAPIKey) {
-                proxyReq.setHeader(HttpHeaders.AUTHORIZATION, `Bearer ${this.options.defaultAPIKey}`);
+            if (this.useDefaultAPIKey()) {
+                proxyReq.setHeader(HttpHeaders.AUTHORIZATION, `Bearer ${this.selectAPIKey()}`);
             }
         });
+    }
+
+    protected useDefaultAPIKey(authorization?: string): boolean {
+        if (!authorization || authorization.includes('managed')) {
+            return this.apiKeys.length > 0;
+        }
+        return false;
+    }
+
+    protected selectAPIKey(): string {
+        const randomIndex = Math.floor(Math.random() * this.apiKeys.length);
+        return this.apiKeys[randomIndex];
     }
 
     async handle(ctx: Context, next: () => Promise<void>): Promise<void> {
