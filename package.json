@@ -10,12 +10,12 @@
     "src"
   ],
   "dependencies": {
-    "@malagu/core": "2.45.2",
-    "@malagu/mvc": "2.45.2",
+    "@malagu/core": "2.47.0",
+    "@malagu/mvc": "2.47.0",
     "http-proxy": "^1.18.1"
   },
   "devDependencies": {
-    "@malagu/cli": "2.45.2",
+    "@malagu/cli": "2.47.0",
     "@types/http-proxy": "^1.17.8"
   },
   "scripts": {

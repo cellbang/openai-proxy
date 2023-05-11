@@ -9,12 +9,12 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@malagu/cli-common@2.45.2":
-  version "2.45.2"
-  resolved "https://registry.yarnpkg.com/@malagu/cli-common/-/cli-common-2.45.2.tgz#be51c251363bff802b0f18b4930a7f1ba138d051"
-  integrity sha512-E1N8xJf8JllKXNQOa2ioyTrHiZQiifI1EzNJLTZgCA1xR0vDMmU5lna5VTkmjiHImLsAGZcb/5T81LIUQIQHaA==
+"@malagu/cli-common@2.47.0":
+  version "2.47.0"
+  resolved "https://registry.yarnpkg.com/@malagu/cli-common/-/cli-common-2.47.0.tgz#a918b2d7b81fbd4b13b59198cfb7e2dba3a1010d"
+  integrity sha512-IMq3M9KRL+s2Mxh9PCqBhldmds0udTJrXPFwyoZ6Hjm4gtRX6ZKZnelCp6iO0fkX5UdKvHvajROX69NPyIbYwg==
   dependencies:
-    "@malagu/frameworks" "2.45.2"
+    "@malagu/frameworks" "2.47.0"
     "@types/fs-extra" "^9.0.13"
     "@types/js-yaml" "^3.12.1"
     "@types/lodash.mergewith" "^4.6.6"
@@ -40,13 +40,13 @@
     typescript "~4.5.5"
     uuid "^8.3.2"
 
-"@malagu/cli-runtime@2.45.2":
-  version "2.45.2"
-  resolved "https://registry.yarnpkg.com/@malagu/cli-runtime/-/cli-runtime-2.45.2.tgz#fcf4f320c7c4b5f0b0265ef069e4412484aaa15a"
-  integrity sha512-GFG8SlKf0fpghhUDraTnetOy5Co0aklDG10720tEkBAaGLdB4bt/VLoJe4zlOslJj9NBfxvauM7HHydcct+wtw==
+"@malagu/cli-runtime@2.47.0":
+  version "2.47.0"
+  resolved "https://registry.yarnpkg.com/@malagu/cli-runtime/-/cli-runtime-2.47.0.tgz#3462b21f226c3b2b5b95e1320a1941884f4b22db"
+  integrity sha512-pvdvMXGlJxj/vWbtQaUqgB/HhiPTPyOP0VBzyEbf//Ao0G0xe4yaBMsyJQf34+a9EdQeDyGCXFc0tcXk+CSuJA==
   dependencies:
-    "@malagu/cli-common" "2.45.2"
-    "@malagu/frameworks" "2.45.2"
+    "@malagu/cli-common" "2.47.0"
+    "@malagu/frameworks" "2.47.0"
     chalk "^4.1.2"
     fs-extra "^9.0.13"
     inquirer "^8.1.2"
@@ -56,14 +56,14 @@
     ora "^5.4.1"
     rimraf "^3.0.2"
 
-"@malagu/cli@2.45.2":
-  version "2.45.2"
-  resolved "https://registry.yarnpkg.com/@malagu/cli/-/cli-2.45.2.tgz#e1664f05a06034c3da308ed765f9f7c2e66e9fae"
-  integrity sha512-ywbhkNLlXQhaPXbEDQInP8U+q46sVY6pXcAPva+YwUQ3JCZuFR1Au79/MVjG2W8ju7UszcZiIbgiQApK+bO3Bw==
+"@malagu/cli@2.47.0":
+  version "2.47.0"
+  resolved "https://registry.yarnpkg.com/@malagu/cli/-/cli-2.47.0.tgz#de6a5b01b66be2b21509a66f416672f7884f7c84"
+  integrity sha512-TLp3vOdS6vXzKb6P8e+q+8x9Yg6f2dGlQzasPG4JDX0SbQ8vUflHZvRGniFo9Q3pXSfJBPaYjIYVxwXWySHLIw==
   dependencies:
-    "@malagu/cli-common" "2.45.2"
-    "@malagu/cli-runtime" "2.45.2"
-    "@malagu/frameworks" "2.45.2"
+    "@malagu/cli-common" "2.47.0"
+    "@malagu/cli-runtime" "2.47.0"
+    "@malagu/frameworks" "2.47.0"
     "@types/js-yaml" "^3.12.1"
     chalk "^4.1.2"
     commander "^8.1.0"
@@ -81,10 +81,10 @@
     update-notifier "^5.0.1"
     watchpack "^2.2.0"
 
-"@malagu/core@2.45.2":
-  version "2.45.2"
-  resolved "https://registry.yarnpkg.com/@malagu/core/-/core-2.45.2.tgz#720097ca9f7596cea395f58b7a56f31a1403832a"
-  integrity sha512-OiP4kfIVI4erQ0NTZ0V9ZQduSlQcGk6bZAxpXYszDkfmsoDSOi+PYFvH0RsJR9gqQ7JuJlb35G+CkT1AUdRNUQ==
+"@malagu/core@2.47.0":
+  version "2.47.0"
+  resolved "https://registry.yarnpkg.com/@malagu/core/-/core-2.47.0.tgz#29cfeeff35a66aa8a8040d20c51c46be7a8adc98"
+  integrity sha512-tp3c5uEs+TGw4+EdRVS6Wi+++lBV2bpL1yltoSPEiNU6kMh0OpTZ6GTZLglr8DMIFs5DQmQK6bR4Z40kXOLFqw==
   dependencies:
     "@types/lodash.debounce" "4.0.3"
     "@types/lodash.throttle" "^4.1.3"
@@ -102,33 +102,33 @@
     traverse "^0.6.6"
     ts-custom-error "^3.1.1"
 
-"@malagu/frameworks@2.45.2":
-  version "2.45.2"
-  resolved "https://registry.yarnpkg.com/@malagu/frameworks/-/frameworks-2.45.2.tgz#c7908f6accc940da8d5598a771565441bba65689"
-  integrity sha512-IYSlq85I2QHV8qOa459MkFpvvAs98Miy2x2oXNrS9G5FdLQVj0WZshjQlKyc0MO6GYBNqBEIBn5C4jVt+wa4Hw==
+"@malagu/frameworks@2.47.0":
+  version "2.47.0"
+  resolved "https://registry.yarnpkg.com/@malagu/frameworks/-/frameworks-2.47.0.tgz#b86fbe8375864bf915c7fad9939e0a4c49d4a51e"
+  integrity sha512-BtMpN6bQq+caVZ4W5qc5tZwPo84weLt5+sZA2fG+0evkDFilj3d7R4xYsCht6KRdIMnSbQnb+3JfYepcjnpfQQ==
   dependencies:
     axios "^0.26.1"
     fs-extra "^9.0.13"
 
-"@malagu/mvc@2.45.2":
-  version "2.45.2"
-  resolved "https://registry.yarnpkg.com/@malagu/mvc/-/mvc-2.45.2.tgz#01568e4cd571d951fbcc5d9d1fc2385973cfb6bd"
-  integrity sha512-AxY9VRvyB/EI3Eg3x1AMlJRL9juamlMB6WOotc4dWE3VBeHkVyrHAsVsVgkDcs5UhXEsc53jabIVFq+KtjcRbg==
+"@malagu/mvc@2.47.0":
+  version "2.47.0"
+  resolved "https://registry.yarnpkg.com/@malagu/mvc/-/mvc-2.47.0.tgz#f1371f3f360332c0d3a98cb3e125ab66ca7a4286"
+  integrity sha512-HbPpmHONelvxAMlNXtDymGfibp3uaIIc3IgDG6GBiqgXup+eO8zoUQrsbvP9PH3YAQYdT73lfsmW7DVgW0mk2g==
   dependencies:
-    "@malagu/core" "2.45.2"
-    "@malagu/web" "2.45.2"
+    "@malagu/core" "2.47.0"
+    "@malagu/web" "2.47.0"
     fs-extra "^9.0.13"
     is-stream "^2.0.0"
     mustache "^4.0.1"
     reflect-metadata "^0.1.13"
     url-join "^4.0.1"
 
-"@malagu/web@2.45.2":
-  version "2.45.2"
-  resolved "https://registry.yarnpkg.com/@malagu/web/-/web-2.45.2.tgz#b49b44a59f96f28c038b9dd2a6f9c371c8f09eb7"
-  integrity sha512-OZUYGslH6i6rUCTouALaBKpeFevlIOW+4rBvUeBRcs1Q/GSAmEEHOYyze5D98z3hyXLdciQZ50miCOste+VHwA==
+"@malagu/web@2.47.0":
+  version "2.47.0"
+  resolved "https://registry.yarnpkg.com/@malagu/web/-/web-2.47.0.tgz#77d0669fafb07a2c771c0fd608b5e673a8244cdf"
+  integrity sha512-yHEEk+U4jQnpMCVmARhd3nEx/lvF9xncclbMPOH+HvU3SdA+uvx4iKFtguUjK//C37Hs0HVRrVNBQIS9sgFAig==
   dependencies:
-    "@malagu/core" "2.45.2"
+    "@malagu/core" "2.47.0"
     "@types/express" "^4.17.9"
     axios "^0.26.1"
     body-parser "^1.19.0"

@@ -24,14 +24,14 @@ export class CodingProxyMiddleware implements Middleware {
         }
         this.proxy = Server.createProxy();
         this.proxy.on('proxyReq', proxyReq => {
-            if (this.useDefaultAPIKey()) {
+            if (this.useDefaultAPIKey(proxyReq.getHeader(HttpHeaders.AUTHORIZATION) as string)) {
                 proxyReq.setHeader(HttpHeaders.AUTHORIZATION, `Bearer ${this.selectAPIKey()}`);
             }
         });
     }
 
     protected useDefaultAPIKey(authorization?: string): boolean {
-        if (!authorization || authorization.includes('managed')) {
+        if (!authorization || authorization.includes('managed') || authorization.trim().includes('Bearer')) {
             return this.apiKeys.length > 0;
         }
         return false;
