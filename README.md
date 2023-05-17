@@ -39,3 +39,5 @@ openAIProxy:
     - sk-Er8O2GJp0pCNo0j8ZNbrT3Blb2DDeSqTW8LXPRyZdyzjTqYb
     - sk-laAUXvv1frT3Blb2DDqojGzjTqYbbkFJwFru2DDeSVkrunU3
 ```
+
+注意：不要将 API Key 的配置文件提交到代码仓库，避免秘钥泄露。可以叫秘钥放置在根目录下：malagu-secret.yml 单独配置文件中，这样就可以在 .gitignore 文件中忽略该文件。
