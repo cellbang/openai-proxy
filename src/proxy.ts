@@ -31,7 +31,7 @@ export class CodingProxyMiddleware implements Middleware {
     }
 
     protected useDefaultAPIKey(authorization?: string): boolean {
-        if (!authorization || authorization.includes('managed') || authorization.trim().includes('Bearer')) {
+        if (authorization?.includes('managed') || authorization?.trim() === 'Bearer') {
             return this.apiKeys.length > 0;
         }
         return false;
